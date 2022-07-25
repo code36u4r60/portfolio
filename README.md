@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img alt="dev.finances" src=".github/captura.jpeg" width="100%">
+  <img alt="Portfólio" src=".github/captura.jpeg" width="100%">
 </p>
 
 <br>
@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este projeto foi realizado como desafio para recordar um pouco as tecnoologias envolvias.
+Este projeto foi realizado como um desafio para relembrar um pouco sobre as tecnologias envolvidas.
 
 ## 🔖 Layout
 

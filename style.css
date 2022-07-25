@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --nav-height: 7.2rem;
+}
+
+html {
+  /* chrome://flags/#smooth-scrolling */
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+section {
+  /* padding-block: 10rem; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.p12 {
+  font-size: 1.2rem;
+}
+
+.main-container {
+  max-width: 136rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  background-color: var(--bg-cards);
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+}
+
+.resume .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 34.9rem;
+}
+
+.resume .card.badge {
+  align-items: center;
+}
+
+.resume .card.badge img {
+  width: 12.8rem;
+  border-radius: 50%;
+  border: solid 0.3rem;
+  border-color: var(--bg-techs);
+}
+
+.resume .card.badge img {
+  width: 12.8rem;
+  border-radius: 50%;
+}
+
+.resume .card.badge h2 {
+  margin-top: 3rem;
+  font-size: 2.3rem;
+}
+
+.resume .card.badge p {
+  font-size: 1.3rem;
+  line-height: 300%;
+}
+
+.resume .card.personal-info p img {
+  color: #cb92b1;
+}
+
+.resume .card.personal-info .info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  line-height: 300%;
+  font-weight: lighter;
+}
+
+.resume .card.personal-info .info p {
+  font-size: 1.2rem;
+}
+.resume .card.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume .card.technologies ul {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume .card.technologies ul li {
+  width: 80px;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--bg-techs);
+  color: var(--body-bg-color);
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+
+.resume .card.experience ul,
+.resume .card.education ul {
+  text-align: left;
+  margin-left: 4rem;
+  list-style: disc;
+}
+
+.resume .card.experience ul li,
+.resume .card.card.education ul li {
+  margin-top: 3rem;
+}
+
+.resume .card.experience ul li h3,
+.resume .card.card.education ul li h3 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 1.8rem;
+  font-weight: bold;
+}
+
+.resume .card.card.education ul li p,
+.resume .card.experience ul li p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main .projects,
+.main .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main .card.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .projects .cards {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.main .projects .cards .card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.main .projects .cards .card .title {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.main .projects .cards .card .title svg {
+  width: 20px;
+  height: 20px;
+}
+
+.main .projects .cards .card .title h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main .projects .cards .card .title h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.main .projects .cards .card p {
+  text-align: left;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.main .projects .cards .card .footer {
+  display: flex;
+  justify-content: space-between;
+}
+.main .projects .cards .card .footer .visibility,
+.main .projects .cards .card .footer .visibility > * {
+  display: flex;
+  gap: 1.6rem;
+}
+.main .projects .cards .card .footer .visibility > * {
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.main .projects .cards .card .footer .lang {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #e7de79;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main .posts .cards .card {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.main .posts .cards .card img {
+  width: 12.8rem;
+  height: 12.8rem;
+  border-radius: 50%;
+}
+
+.main .posts .cards .card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.8rem;
+}
+
+.main .posts .cards .card .body .title,
+.main .posts .cards .card .body .resume {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.main .posts .cards .card .body h4 {
+  font-weight: lighter;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.main .posts .cards .card .body ul {
+  display: flex;
+  align-self: flex-start;
+  gap: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: lighter;
+}
+
+/*** FOOTER ***/
+.badge footer {
+  text-align: center;
+}
